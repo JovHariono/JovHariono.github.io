@@ -35,7 +35,7 @@ img {
 main,
 footer {
   background: var(--smooky-black);
-  font-family: "Poppins";  
+  font-family: "Poppins";
 }
 
 div,
@@ -63,7 +63,7 @@ p,
 .logo {
   width: 5rem;
   height: 2rem;
-  object-fit: fill  ;
+  object-fit: fill;
 }
 
 .containerNav {
@@ -201,7 +201,7 @@ p,
 }
 
 .swiper-slide img {
-  display:  block;
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -224,7 +224,7 @@ p,
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;  
+  width: 100%;
 }
 /* swiper */
 
@@ -237,7 +237,7 @@ p,
 .judulAboutUs {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 .containerAboutUs {
@@ -290,7 +290,7 @@ p,
   align-items: center;
   width: 25%;
   height: auto;
-  background-color: var(--sauce-piquante);  
+  background-color: var(--sauce-piquante);
 }
 
 .mainPageCard img {
@@ -399,15 +399,11 @@ p,
   }
 
   .containerFooterSosmed {
-    width: 42%;    
+    width: 42%;
   }
 
-  .containerFooter h3{
+  .containerFooter h3 {
     font-size: 1rem;
-  }
-
-  .containerAboutUs img {
-    /* width: 50%; */
   }
 
   .containerKontenAboutUs {
@@ -430,12 +426,12 @@ p,
 @media (max-width: 800px) {
   .containerFooterSosmed {
     width: 52%;
-  }  
+  }
 
-  .containerAboutUs {    
+  .containerAboutUs {
     flex-direction: column;
     gap: 2rem;
-  } 
+  }
 
   .containerKontenAboutUs {
     width: 45%;
@@ -471,7 +467,7 @@ p,
     justify-content: flex-end;
   }
 
-  .containerFooter h3{
+  .containerFooter h3 {
     font-size: 0.8rem;
   }
 }
