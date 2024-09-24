@@ -34,7 +34,7 @@ const FooterCards = [
   },
 ];
 
-const Footer: React.FunctionComponent<IFooterProps> = (props) => {
+const Footer: React.FunctionComponent<IFooterProps> = () => {
   return (
     <>
       <h2>Alamat</h2>

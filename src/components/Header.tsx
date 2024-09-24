@@ -11,7 +11,7 @@ import logowhite from "../../public/logos/logoWhite.png";
 
 interface IHeaderProps {}
 
-const Header: React.FunctionComponent<IHeaderProps> = (props) => {
+const Header: React.FunctionComponent<IHeaderProps> = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [logo, setLogo] = useState(logowhite);
 

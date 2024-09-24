@@ -53,9 +53,7 @@ const SwiperCards = [
   },
 ];
 
-const ComponentSwiper: React.FunctionComponent<IComponentSwiperProps> = (
-  props
-) => {
+const ComponentSwiper: React.FunctionComponent<IComponentSwiperProps> = () => {
   const [item, setItem] = useState(3);
 
   useEffect(() => {
