@@ -9,32 +9,30 @@ import {
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 
-interface IFooterProps {}
-
 const FooterCards = [
   {
-    link: "/",
+    link: "https://www.google.com/",
     ikon: faInstagram,
     deskripsi: "@sosmed",
   },
   {
-    link: "/",
+    link: "https://www.google.com/",
     ikon: faTwitter,
     deskripsi: "@sosmed",
   },
   {
-    link: "/",
+    link: "https://www.google.com/",
     ikon: faFacebook,
     deskripsi: "@sosmed",
   },
   {
-    link: "/",
+    link: "https://www.google.com/",
     ikon: faTiktok,
     deskripsi: "@sosmed",
   },
 ];
 
-const Footer: React.FunctionComponent<IFooterProps> = () => {
+const Footer: React.FunctionComponent = () => {
   return (
     <>
       <h2>Alamat</h2>

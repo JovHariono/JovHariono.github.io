@@ -9,9 +9,7 @@ import { bubble as Menu } from "react-burger-menu";
 import logoBlack from "../../public/logos/logo.png";
 import logowhite from "../../public/logos/logoWhite.png";
 
-interface IHeaderProps {}
-
-const Header: React.FunctionComponent<IHeaderProps> = () => {
+const Header: React.FunctionComponent = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [logo, setLogo] = useState(logowhite);
 
@@ -36,7 +34,7 @@ const Header: React.FunctionComponent<IHeaderProps> = () => {
 
   return (
     <>
-      <div className={`containerNavMobile ${isScrolled ? "scrolled" : " "}`}>
+      <div className={`containerNavMobile ${isScrolled ? "scrolled" : ""}`}>
         <Menu>
           <Link className="menu-item" href="/">
             Home
@@ -50,7 +48,7 @@ const Header: React.FunctionComponent<IHeaderProps> = () => {
         </Menu>
       </div>
 
-      <div className={`containerNav ${isScrolled ? "scrolled" : " "}`}>
+      <div className={`containerNav ${isScrolled ? "scrolled" : ""}`}>
         <Link className="navLogo" href="/">
           <Image className="logo" alt="Acierto's Asset" src={logo}></Image>
         </Link>

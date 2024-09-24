@@ -18,42 +18,38 @@ import "swiper/css/effect-cards";
 import * as React from "react";
 import { useState, useEffect } from "react";
 
+//asset
 import mobil1 from "../../public/mobil1.jpeg";
 import mobil2 from "../../public/mobil2.jpeg";
 import mobil3 from "../../public/mobil3.jpeg";
 import bis1 from "../../public/bis1.jpeg";
 import bis2 from "../../public/bis2.jpeg";
-
 //asset
-
-//asset
-
-interface IComponentSwiperProps {}
 
 const SwiperCards = [
   {
     gambar: mobil1,
-    link: "/",
+    link: "https://www.google.com/",
   },
   {
     gambar: mobil2,
-    link: "/",
+    link: "https://www.google.com/",
   },
   {
     gambar: mobil3,
-    link: "/",
+    link: "https://www.google.com/",
   },
   {
     gambar: bis1,
-    link: "/",
+    link: "https://www.google.com/",
   },
   {
     gambar: bis2,
-    link: "/",
+    link: "https://www.google.com/",
   },
 ];
 
-const ComponentSwiper: React.FunctionComponent<IComponentSwiperProps> = () => {
+const ComponentSwiper: React.FunctionComponent = () => {
   const [item, setItem] = useState(3);
 
   useEffect(() => {
