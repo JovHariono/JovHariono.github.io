@@ -1,0 +1,412 @@
+:root {
+  --merins-fire: #ff9408;
+  --smooky-black: #100c08;
+  --sauce-piquante: #ca3f16;
+  --bacchic-burgundy: #95122c;
+  --drifting-cloud: #dbe0e1;
+  --drifting-cloud: #f3f4f5;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/fonts/poppins/Poppins-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/fonts/poppins/Poppins-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+main,
+footer {
+  background: var(--smooky-black);
+  font-family: "Poppins";  
+}
+
+div,
+a,
+h3,
+h2,
+h1,
+p,
+.icon {
+  color: var(--drifting-cloud);
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.logo {
+  width: 5rem;
+  height: 2rem;
+  object-fit: fill  ;
+}
+
+.containerNav {
+  padding: 1rem 5rem 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.containerNav a {
+  color: var(--drifting-cloud);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 10%;
+}
+
+.containerNav a:hover {
+  background-color: var(--merins-fire);
+  transition: 0.5s ease;
+}
+
+.containerNav h1 {
+  color: var(--drifting-cloud);
+}
+
+.containerNav.scrolled {
+  background-color: var(--sauce-piquante);
+}
+
+.containerNav.scrolled a {
+  color: var(--smooky-black);
+}
+
+.containerNav.scrolled h1 {
+  color: var(--smooky-black);
+}
+
+.navLogo {
+  text-decoration: none;
+}
+
+.containerNavHref {
+  display: flex;
+  gap: 5rem;
+}
+
+.navHref {
+  text-decoration: none;
+}
+
+.containerNavMobile {
+  width: 100%;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.containerNavMobile.scrolled {
+  height: 6rem;
+  background-color: var(--sauce-piquante);
+  color: var(--smooky-black);
+}
+
+.containerNavMobile.scrolled .bm-burger-button .bm-burger-bars {
+  background-color: var(--smooky-black);
+}
+
+.menu-item {
+  text-decoration: none;
+  color: var(--drifting-cloud);
+  padding: 0 0 1rem 0;
+}
+
+/* burger */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+.bm-burger-bars {
+  background: var(--drifting-cloud);
+}
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+.bm-cross {
+  background: var(--drifting-cloud);
+}
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+.bm-menu {
+  background: var(--smooky-black);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+.bm-morph-shape {
+  fill: var(--smooky-black);
+}
+.bm-item-list {
+  color: var(--drifting-cloud);
+  padding: 0.8em;
+}
+.bm-item {
+  display: inline-block;
+}
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* burger */
+
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* border-radius: 5%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next {
+  color: var(--sauce-piquante);
+}
+
+.swiper-button-prev {
+  color: var(--sauce-piquante);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: blue;
+}
+
+.containerSwiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* swiper */
+
+/* main */
+.judulMainPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 0 0;
+}
+
+.containerMainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 2rem 0 0 0;
+}
+
+.mainPageCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: auto;
+  background-color: var(--sauce-piquante);
+  padding: 2rem;
+  border-radius: 5%;
+}
+
+.mainPageCard img {
+  width: 30rem;
+  height: auto;
+}
+
+.mainPageCard p {
+  font-family: "Poppins";
+}
+/* main */
+
+/* footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem 2rem 15rem;
+}
+
+.containerFooterSosmed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 28%;
+}
+
+.containerFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #373a47;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.icon {
+  width: 1.5rem;
+}
+/* footer */
+
+@media (min-width: 901px) {
+  .containerNavMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .containerNav {
+    display: none;
+  }
+
+  .containerFooterSosmed {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .containerFooterSosmed {
+    width: 32%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .containerFooterSosmed {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .containerFooterSosmed {
+    width: 40%;
+  }
+
+  .footer {
+    padding: 2rem 2rem 2rem 10rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .mainPageCard {
+    width: 42%;
+  }
+
+  .containerFooterSosmed {
+    width: 42%;    
+  }
+
+  .containerFooter h3{
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 2rem 0rem 2rem 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .containerFooterSosmed {
+    width: 52%;
+  }
+
+  .footer {
+    padding: 2rem 0rem 2rem 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 2rem 1rem 2rem 3rem;
+  }
+
+  .containerFooterSosmed {
+    width: 55%;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    padding: 2rem 1rem 2rem 2rem;
+  }
+
+  .mainPageCard {
+    width: 70%;
+  }
+
+  .containerFooterSosmed {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .containerFooter h3{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    padding: 2rem 0.5rem 2rem 0.5rem;
+  }
+
+  .mainPageCard {
+    width: 70%;
+  }
+
+  .containerFooterSosmed {
+    width: 60%;
+  }
+}
