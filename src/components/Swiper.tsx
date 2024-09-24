@@ -14,7 +14,9 @@ import {
 } from "swiper/modules";
 import SwiperCard from "@/cards/SwiperCard";
 import "swiper/css";
-import "swiper/css/effect-cards";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "@/styles/globals.css";
 import * as React from "react";
 import { useState, useEffect } from "react";
 
