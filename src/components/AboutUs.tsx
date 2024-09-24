@@ -9,13 +9,13 @@ const AboutUs: React.FunctionComponent = () => {
       <div className="containerau" id="about-us">
         <h1 className="judulAboutUs">About Us</h1>
         <div className="containerAboutUs">
-          <Image quality={100} alt="Acierto's Asset" src={gedung1}></Image>
+          <Image quality={100} alt="Acierto's Asset" src={gedung1} />
 
           <div className="containerKontenAboutUs">
             <h2>Judul</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industry standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. It has
               survived not only five centuries, but also the leap into
