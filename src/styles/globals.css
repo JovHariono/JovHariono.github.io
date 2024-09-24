@@ -208,11 +208,11 @@ p,
 }
 
 .swiper-button-next {
-  color: var(--sauce-piquante);
+  color: var(--sauce-piquante) !important;
 }
 
 .swiper-button-prev {
-  color: var(--sauce-piquante);
+  color: var(--sauce-piquante) !important;
 }
 
 .swiper-button-next:hover,
