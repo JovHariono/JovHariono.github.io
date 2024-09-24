@@ -39,11 +39,14 @@ const Header: React.FunctionComponent = () => {
           <Link className="menu-item" href="/">
             Home
           </Link>
-          <Link className="menu-item" href="/">
-            Menu
+          <Link className="menu-item" href="/#about-us">
+            About Us
+          </Link>
+          <Link className="menu-item" href="/#our-project">
+            Our Projects
           </Link>
           <Link className="menu-item" href="/#contact">
-            Contact
+            Contacts
           </Link>
         </Menu>
       </div>
@@ -54,11 +57,14 @@ const Header: React.FunctionComponent = () => {
         </Link>
 
         <div className="containerNavHref">
-          <Link href="" className="navHref">
-            Menu
+          <Link href="/#about-us" className="navHref">
+            About Us
+          </Link>
+          <Link href="/#our-project" className="navHref">
+            Our Project
           </Link>
           <Link href="/#contact" className="navHref">
-            Contact
+            Contacts
           </Link>
         </div>
       </div>

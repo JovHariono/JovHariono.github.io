@@ -4,6 +4,7 @@ import MainPageCard from "@/cards/MainPageCard";
 import wash1 from "../../public/wash1.jpeg";
 import gedung1 from "../../public/gedung1.jpeg";
 import wash3 from "../../public/wash3.jpeg";
+import AboutUs from "@/components/AboutUs";
 
 const contentMains = [
   {
@@ -50,7 +51,9 @@ export default function Home() {
       <div className="containerMain">
         <ComponentSwiper />
 
-        <h1 className="judulMainPage">Our Projects</h1>
+        <AboutUs />
+
+        <h1 id="our-project" className="judulMainPage">Our Projects</h1>
         <div className="containerMainPage">          
           {contentMains.map((data, index) => {
             return (
