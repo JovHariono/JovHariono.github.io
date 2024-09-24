@@ -13,22 +13,22 @@ interface IFooterProps {}
 
 const FooterCards = [
   {
-    link: "",
+    link: "/",
     ikon: faInstagram,
     deskripsi: "@sosmed",
   },
   {
-    link: "",
+    link: "/",
     ikon: faTwitter,
     deskripsi: "@sosmed",
   },
   {
-    link: "",
+    link: "/",
     ikon: faFacebook,
     deskripsi: "@sosmed",
   },
   {
-    link: "",
+    link: "/",
     ikon: faTiktok,
     deskripsi: "@sosmed",
   },

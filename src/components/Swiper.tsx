@@ -10,7 +10,7 @@ import {
   Pagination,
   Navigation,
   FreeMode,
-  EffectCards,
+  // EffectCards,
 } from "swiper/modules";
 import SwiperCard from "@/cards/SwiperCard";
 import "swiper/css";

@@ -36,7 +36,7 @@ const Header: React.FunctionComponent<IHeaderProps> = () => {
 
   return (
     <>
-      <div className={`containerNavMobile ${isScrolled ? "scrolled" : ""}`}>
+      <div className={`containerNavMobile ${isScrolled ? "scrolled" : " "}`}>
         <Menu>
           <Link className="menu-item" href="/">
             Home
@@ -50,7 +50,7 @@ const Header: React.FunctionComponent<IHeaderProps> = () => {
         </Menu>
       </div>
 
-      <div className={`containerNav ${isScrolled ? "scrolled" : ""}`}>
+      <div className={`containerNav ${isScrolled ? "scrolled" : " "}`}>
         <Link className="navLogo" href="/">
           <Image className="logo" alt="Acierto's Asset" src={logo}></Image>
         </Link>
