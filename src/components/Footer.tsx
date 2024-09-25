@@ -11,22 +11,22 @@ import {
 
 const FooterCards = [
   {
-    link: "https://www.google.com/",
+    link: "",
     ikon: faInstagram,
     deskripsi: "@sosmed",
   },
   {
-    link: "https://www.google.com/",
+    link: "",
     ikon: faTwitter,
     deskripsi: "@sosmed",
   },
   {
-    link: "https://www.google.com/",
+    link: "",
     ikon: faFacebook,
     deskripsi: "@sosmed",
   },
   {
-    link: "https://www.google.com/",
+    link: "",
     ikon: faTiktok,
     deskripsi: "@sosmed",
   },

@@ -16,8 +16,10 @@ const MainPageCard: React.FunctionComponent<IMainPageCardProps> = (props) => {
         <Image quality={100} src={props.gambar} alt=""></Image>
       </Link>
 
-      <h2>{props.judul}</h2>
-      <p>{props.deskripsi}</p>
+      <div className="text-overlay">
+        <h2>{props.judul}</h2>
+        <p>{props.deskripsi}</p>
+      </div>
     </div>
   );
 };

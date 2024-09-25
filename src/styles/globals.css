@@ -278,7 +278,7 @@ p,
   align-items: center;
   flex-wrap: wrap;
   gap: 5rem;
-  padding: 2rem 0 0 0;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .mainPageCard {
@@ -288,14 +288,29 @@ p,
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  width: 30%;
   height: auto;
-  background-color: var(--sauce-piquante);
+  position: relative;
 }
 
 .mainPageCard img {
-  width: 30rem;
+  width: 100%;
   height: auto;
+}
+
+.mainPageCard .text-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+}
+
+.mainPageCard h2 {
+  font-family: "Poppins";
+  font-weight: bold;
 }
 
 .mainPageCard p {
@@ -359,6 +374,14 @@ p,
   .containerAboutUs img {
     width: 55%;
   }
+
+  .containerMainPage h2 {
+    font-size: 1.3rem;
+  }
+
+  .containerMainPage p {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -372,6 +395,10 @@ p,
 
   .containerKontenAboutUs p {
     font-size: 0.8rem;
+  }
+
+  .mainPageCard {
+    width: 40%;
   }
 }
 
@@ -390,6 +417,18 @@ p,
 
   .containerKontenAboutUs p {
     font-size: 0.75rem;
+  }
+
+  .mainPageCard {
+    width: 40%;
+  }
+
+  .mainPageCard h2 {
+    font-size: 1rem;
+  }
+
+  .mainPageCard p {
+    font-size: 0.6;
   }
 }
 
@@ -440,6 +479,14 @@ p,
   .footer {
     padding: 2rem 0rem 2rem 5rem;
   }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.65rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -450,16 +497,24 @@ p,
   .containerFooterSosmed {
     width: 55%;
   }
+
+  .mainPageCard {
+    width: 80%;
+  }
+
+  .containerAboutUs img {
+    width: 80%;
+  }
+
+  .containerKontenAboutUs {
+    width: 70%;
+  }  
 }
 
 @media (max-width: 500px) {
   .footer {
     padding: 2rem 1rem 2rem 2rem;
-  }
-
-  .mainPageCard {
-    width: 70%;
-  }
+  }  
 
   .containerFooterSosmed {
     width: 70%;
@@ -477,11 +532,23 @@ p,
     padding: 2rem 0.5rem 2rem 0.5rem;
   }
 
+  .containerAboutUs img {
+    width: 98%;
+  }
+
+  .containerKontenAboutUs {
+    width: 90%;
+  }
+
   .mainPageCard {
-    width: 70%;
+    width: 90%;
+  }
+
+  .footer {
+    padding-left: 2rem;
   }
 
   .containerFooterSosmed {
-    width: 60%;
+    width: 70%;
   }
 }

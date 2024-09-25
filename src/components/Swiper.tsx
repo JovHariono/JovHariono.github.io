@@ -31,23 +31,23 @@ import bis2 from "../../public/bis2.jpeg";
 const SwiperCards = [
   {
     gambar: mobil1,
-    link: "https://www.google.com/",
+    link: "",
   },
   {
     gambar: mobil2,
-    link: "https://www.google.com/",
+    link: "",
   },
   {
     gambar: mobil3,
-    link: "https://www.google.com/",
+    link: "",
   },
   {
     gambar: bis1,
-    link: "https://www.google.com/",
+    link: "",
   },
   {
     gambar: bis2,
-    link: "https://www.google.com/",
+    link: "",
   },
 ];
 
