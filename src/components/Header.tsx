@@ -9,13 +9,17 @@ import { bubble as Menu } from "react-burger-menu";
 import logoBlack from "../../public/logos/logo.png";
 import logowhite from "../../public/logos/logoWhite.png";
 
+type MenuState = {
+  isOpen: boolean;
+};
+
 const Header: React.FunctionComponent = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [logo, setLogo] = useState(logowhite);
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleMenuStateChange = (state: any) => {
+  const handleMenuStateChange = (state: MenuState) => {
     setIsOpen(state.isOpen);
   };
 
