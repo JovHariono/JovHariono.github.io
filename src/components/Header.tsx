@@ -13,16 +13,26 @@ const Header: React.FunctionComponent = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [logo, setLogo] = useState(logowhite);
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenuStateChange = (state: any) => {
+    setIsOpen(state.isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
 
       if (scrollTop > 50) {
         setIsScrolled(true);
-        setLogo(logoBlack)
+        setLogo(logoBlack);
       } else {
         setIsScrolled(false);
-        setLogo(logowhite)
+        setLogo(logowhite);
       }
     };
 
@@ -35,17 +45,17 @@ const Header: React.FunctionComponent = () => {
   return (
     <>
       <div className={`containerNavMobile ${isScrolled ? "scrolled" : ""}`}>
-        <Menu>
-          <Link className="menu-item" href="/">
+        <Menu isOpen={isOpen} onStateChange={handleMenuStateChange}>
+          <Link className="menu-item" href="/" onClick={closeMenu}>
             Home
           </Link>
-          <Link className="menu-item" href="/#about-us">
+          <Link className="menu-item" href="/#about-us" onClick={closeMenu}>
             About Us
           </Link>
-          <Link className="menu-item" href="/#our-project">
+          <Link className="menu-item" href="/#our-project" onClick={closeMenu}>
             Our Projects
           </Link>
-          <Link className="menu-item" href="/#contact">
+          <Link className="menu-item" href="/#contact" onClick={closeMenu}>
             Contacts
           </Link>
         </Menu>
