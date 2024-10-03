@@ -84,7 +84,7 @@ p,
   color: var(--drifting-cloud);
   font-size: 1.5rem;
   /* padding: 0.5rem; */
-  border-radius: 10%;
+  border-radius: 10px;
 }
 
 .containerNav a:hover {
@@ -119,6 +119,7 @@ p,
 
 .navHref {
   text-decoration: none;
+  padding: 10px;
 }
 
 .containerNavMobile {
