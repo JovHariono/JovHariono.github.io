@@ -58,7 +58,7 @@ p,
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;  
+  z-index: 1000;
 
   font-family: "Poppins";
   font-weight: bold;
@@ -97,7 +97,7 @@ p,
 }
 
 .containerNav.scrolled {
-  background-color: var(--sauce-piquante);
+  background-color: var(--drifting-cloud);
 }
 
 .containerNav.scrolled a {
@@ -243,6 +243,7 @@ p,
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 3rem;
 }
 
 .containerAboutUs {
@@ -259,7 +260,9 @@ p,
 }
 
 .containerKontenAboutUs p {
+  font-size: 1.5rem;
   padding: 0.5rem 0 0 0;
+  text-align: justify;
 }
 
 .containerAboutUs img {
@@ -275,6 +278,7 @@ p,
   justify-content: center;
   padding: 2rem 0 0 0;
   scroll-margin-top: 5rem;
+  font-size: 3rem;
 }
 
 .containerMainPage {
@@ -296,6 +300,13 @@ p,
   width: 30%;
   height: auto;
   position: relative;
+  overflow: hidden;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .mainPageCard img {
@@ -305,12 +316,27 @@ p,
 
 .mainPageCard .text-overlay {
   position: absolute;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   padding: 0.5rem;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainPageCard:hover .text-overlay {
+  opacity: 1;
 }
 
 .mainPageCard h2 {
@@ -369,6 +395,10 @@ p,
   .containerFooterSosmed {
     width: 35%;
   }
+
+  .judulAboutUs {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -394,12 +424,12 @@ p,
     width: 35%;
   }
 
-  .containerKontenAboutUs h2 {
+  /* .containerKontenAboutUs h2 {
     font-size: 1.3rem;
-  }
+  } */
 
   .containerKontenAboutUs p {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .mainPageCard {
@@ -416,12 +446,20 @@ p,
     padding: 2rem 2rem 2rem 10rem;
   }
 
-  .containerKontenAboutUs h2 {
+  /* .containerKontenAboutUs h2 {
     font-size: 1.2rem;
+  } */
+
+  .judulAboutUs {
+    font-size: 2rem;
+  }
+
+  .judulMainPage {
+    font-size: 2rem;
   }
 
   .containerKontenAboutUs p {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .mainPageCard {
@@ -454,13 +492,13 @@ p,
     width: 45%;
   }
 
-  .containerKontenAboutUs h2 {
+  /* .containerKontenAboutUs h2 {
     font-size: 1.1rem;
-  }
+  } */
 
-  .containerKontenAboutUs p {
+  /* .containerKontenAboutUs p {
     font-size: 0.65rem;
-  }
+  } */
 
   .footer {
     padding: 2rem 0rem 2rem 5rem;
@@ -478,7 +516,11 @@ p,
   }
 
   .containerKontenAboutUs {
-    width: 45%;
+    width: 55%;
+  }  
+
+  .containerKontenAboutUs p {
+
   }
 
   .footer {
@@ -513,13 +555,13 @@ p,
 
   .containerKontenAboutUs {
     width: 70%;
-  }  
+  }
 }
 
 @media (max-width: 500px) {
   .footer {
     padding: 2rem 1rem 2rem 2rem;
-  }  
+  }
 
   .containerFooterSosmed {
     width: 70%;

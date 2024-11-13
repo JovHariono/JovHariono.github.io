@@ -7,23 +7,19 @@ const AboutUs: React.FunctionComponent = () => {
   return (
     <>
       <div className="containerau" id="about-us">
-        <h1 className="judulAboutUs">About Us</h1>
+        <h1 className="judulAboutUs">Hello!</h1>
         <div className="containerAboutUs">
           <Image quality={100} alt="Acierto's Asset" src={gedung1} />
 
           <div className="containerKontenAboutUs">
-            <h2>Judul</h2>
+            {/* <h2>Judul</h2> */}
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Acierto Visuals brings brands to life through captivating digital
+              ads, powerful company profiles and other creative contents.
+              Specializing in high-quality video production, we’re here to
+              amplify your brand’s story with creative, impactful visuals. Our
+              team is dedicated to delivering content that connects, engages,
+              and drives results.
             </p>
           </div>
         </div>

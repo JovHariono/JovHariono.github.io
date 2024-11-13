@@ -13,7 +13,7 @@ const MainPageCard: React.FunctionComponent<IMainPageCardProps> = (props) => {
   return (
     <div className="mainPageCard">
       <Link href={props.link}>
-        <Image quality={100} src={props.gambar} alt=""></Image>
+        <Image quality={100} src={props.gambar} alt="" className="card-image" />
       </Link>
 
       <div className="text-overlay">
