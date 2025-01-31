@@ -1,4 +1,4 @@
-import ComponentSwiper from "@/components/Swiper";
+// import ComponentSwiper from "@/components/Swiper";
 import MainPageCard from "@/cards/MainPageCard";
 
 import wash1 from "../../public/wash1.jpeg";
