@@ -198,17 +198,23 @@ p,
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-  /* border-radius: 5%; */
+  /* background: #fff; */
+  border-radius: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.swiperBrandCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   object-fit: cover;
 }
 

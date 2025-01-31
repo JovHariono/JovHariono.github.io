@@ -1,10 +1,6 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "@/styles/globals.css";
 import {
   Autoplay,
   Pagination,
@@ -13,10 +9,6 @@ import {
   // EffectCards,
 } from "swiper/modules";
 import SwiperCard from "@/cards/SwiperCard";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "@/styles/globals.css";
 import * as React from "react";
 import { useState, useEffect } from "react";
 
