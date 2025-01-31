@@ -10,7 +10,7 @@ import wash3 from "../../public/wash3.jpeg";
 import AboutUs from "@/components/AboutUs";
 import ComponentsVideoPlayer from "@/components/VideoPlayer";
 import SwiperBrand from "@/components/SwiperBrand";
-import ComponentSwiper from "@/components/Swiper";
+// import ComponentSwiper from "@/components/Swiper";
 
 const contentMains = [
   {
@@ -55,8 +55,7 @@ export default function Home() {
   return (
     <>
       <div className="containerMain">
-        <ComponentsVideoPlayer />
-        {/* <ComponentSwiper /> */}
+        <ComponentsVideoPlayer />        
 
         <AboutUs />
 
@@ -80,8 +79,7 @@ export default function Home() {
         <h1 className="judulMainPage">Brand That Trust Us</h1>
         <div className="containerMainPage">
           <SwiperBrand />
-        </div>
-        {/* <ComponentSwiper /> */}
+        </div>        
       </div>
     </>
   );
