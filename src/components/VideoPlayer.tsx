@@ -6,9 +6,7 @@ import ReactPlayer from "react-player";
 
 interface IComponentsVideoPlayerProps {}
 
-const ComponentsVideoPlayer: React.FunctionComponent<
-  IComponentsVideoPlayerProps
-> = (props) => {
+const ComponentsVideoPlayer: React.FunctionComponent = () => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
