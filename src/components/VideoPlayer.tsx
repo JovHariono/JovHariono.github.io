@@ -18,19 +18,17 @@ const ComponentsVideoPlayer: React.FunctionComponent = () => {
   }
 
   return (
-    <>
       <div className="containerVideoPlayers">
         <ReactPlayer
           url="/videos/videoAcierto.mp4"
-          playing={true}
-          loop={true}
-          controls={true}
-          muted={true}
+          playing
+          loop
+          controls
+          muted
           width="100%"
           height="100%"
         />
       </div>
-    </>
   );
 };
 
