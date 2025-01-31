@@ -4,7 +4,7 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 
-interface IComponentsVideoPlayerProps {}
+// interface IComponentsVideoPlayerProps {}
 
 const ComponentsVideoPlayer: React.FunctionComponent = () => {
   const [isMounted, setIsMounted] = useState(false);
