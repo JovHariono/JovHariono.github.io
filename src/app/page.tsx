@@ -9,37 +9,37 @@ import ComponentsVideoPlayer from "@/components/VideoPlayer";
 
 const contentMains = [
   {
-    link: "",
+    link: "/",
     gambar: wash1,
     judul: "judul",
     deskripsi: "deskripsi",
   },
   {
-    link: "",
+    link: "/",
     gambar: gedung1,
     judul: "judul",
     deskripsi: "deskripsi",
   },
   {
-    link: "",
+    link: "/",
     gambar: wash3,
     judul: "judul",
     deskripsi: "deskripsi",
   },
   {
-    link: "",
+    link: "/",
     gambar: wash1,
     judul: "judul",
     deskripsi: "deskripsi",
   },
   {
-    link: "",
+    link: "/",
     gambar: gedung1,
     judul: "judul",
     deskripsi: "deskripsi",
   },
   {
-    link: "",
+    link: "/",
     gambar: wash3,
     judul: "judul",
     deskripsi: "deskripsi",
