@@ -5,6 +5,7 @@ import wash1 from "../../public/wash1.jpeg";
 import gedung1 from "../../public/gedung1.jpeg";
 import wash3 from "../../public/wash3.jpeg";
 import AboutUs from "@/components/AboutUs";
+import ComponentsVideoPlayer from "@/components/VideoPlayer";
 
 const contentMains = [
   {
@@ -49,7 +50,8 @@ export default function Home() {
   return (
     <>
       <div className="containerMain">
-        <ComponentSwiper />
+        <ComponentsVideoPlayer />
+        {/* <ComponentSwiper /> */}
 
         <AboutUs />
 
